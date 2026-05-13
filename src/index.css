@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --skz-red: #E60012;
+  --skz-black: #0D0D0D;
+  --skz-dark: #1A1A1A;
+  --skz-gray: #2D2D2D;
+  --skz-text: #FFFFFF;
+  --skz-accent: #FF4D4D;
+}
+
+body {
+  background-color: var(--skz-black);
+  color: var(--skz-text);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.mobile-container {
+  width: 100%;
+  max-width: 375px;
+  min-height: 680px;
+  background-color: var(--skz-dark);
+  border: 2px solid var(--skz-gray);
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 50px rgba(230, 0, 18, 0.15);
+}
+
+.skz-input {
+  width: 100%;
+  background: var(--skz-gray);
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  font-size: 13px;
+  transition: border-color 0.2s;
+}
+
+.skz-input:focus {
+  outline: none;
+  border-color: var(--skz-red);
+}
+
+.skz-btn {
+  width: 100%;
+  background: var(--skz-red);
+  border: none;
+  color: white;
+  padding: 14px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: opacity 0.2s;
+}
+
+.skz-btn:hover {
+  opacity: 0.9;
+}
+
+.skz-label {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--skz-accent);
+  margin-bottom: 4px;
+}
+
+.scratch-area-styled {
+  width: 100%;
+  height: 120px;
+  background: repeating-linear-gradient(45deg, #222, #222 10px, #2a2a2a 10px, #2a2a2a 20px);
+  border: 2px solid var(--skz-red);
+  border-radius: 8px;
+  overflow: hidden;
+}
