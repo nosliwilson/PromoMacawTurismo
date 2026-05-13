@@ -128,7 +128,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-black flex items-center justify-center p-4">
-      <div className="mobile-container relative flex flex-col">
+      <div className={`mobile-container relative flex flex-col ${screen === 'admin' ? 'admin-expanded' : ''}`}>
         {/* Background Image Layer */}
         {settings?.theme?.bgImageUrl && (
           <div 

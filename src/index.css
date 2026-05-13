@@ -39,6 +39,10 @@ body {
   box-shadow: 0 0 50px rgba(230, 0, 18, 0.15);
 }
 
+.mobile-container.admin-expanded {
+  max-width: 800px;
+}
+
 .skz-input {
   width: 100%;
   background: var(--skz-gray);
