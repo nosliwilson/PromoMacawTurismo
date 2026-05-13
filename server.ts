@@ -149,7 +149,7 @@ async function startServer() {
   app.post('/api/admin/login', (req, res) => {
     const { username, password } = req.body;
     const adminUser = process.env.ADMIN_USER || 'admin';
-    const adminPass = process.env.ADMIN_PASSWORD || 'skz_promo_password';
+    const adminPass = process.env.ADMIN_PASSWORD || 'admin';
 
     if (username === adminUser && password === adminPass) {
       res.json({ success: true, token: 'fake-admin-token-' + Date.now() });
